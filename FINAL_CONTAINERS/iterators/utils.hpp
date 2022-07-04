@@ -26,7 +26,7 @@ namespace ft {
 	};
 	
 	template <class Iterator>
-  	struct iterator_traits {
+  	struct iterators_traits {
     	
     	typedef typename Iterator::difference_type		difference_type;
     	typedef typename Iterator::value_type			value_type;
@@ -36,7 +36,7 @@ namespace ft {
   	};
 
 	template <class T>
-	struct iterator_traits <T*> {
+	struct iterators_traits <T*> {
 	  
 		typedef T										value_type;
 		typedef ptrdiff_t								difference_type;
@@ -46,7 +46,7 @@ namespace ft {
 	};
 
 	template <class T>
-	struct iterator_traits <const T*> {
+	struct iterators_traits <const T*> {
 	  
 		typedef T										value_type;
 		typedef ptrdiff_t								difference_type;
@@ -62,11 +62,12 @@ namespace ft {
 	template< class T1, class T2 >
 	struct pair {
 
+	/* ************************************************************************** */
+	/*                          Member type Definition                            */
+	/* ************************************************************************** */
+
 		public:
 		
-		/* ************************************************************************** */
-		/*                          Member type Definition                            */
-		/* ************************************************************************** */
 			typedef T1					first_type;
 			typedef T2					second_type;
 
@@ -136,7 +137,7 @@ namespace ft {
 	/* ************************************************************************** */
 
 	template<bool Cond, class T = void>
-	struct enable_if {};
+	struct enable_if { };
 	
 	template<class T> 
 	struct enable_if<true, T> { typedef T type; };
@@ -146,8 +147,8 @@ namespace ft {
 	/* ************************************************************************** */
 
 	template <typename T>
-	struct is_integral
-	{ 
+	struct is_integral { 
+		
 		static const bool value = false; 
 	};
 

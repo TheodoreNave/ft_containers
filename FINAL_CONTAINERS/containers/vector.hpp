@@ -69,8 +69,7 @@ namespace ft {
 
 			template <class InputIterator>
          	vector (InputIterator first, InputIterator last, const allocator_type& alloc = allocator_type(),
-			  typename ft::enable_if<!ft::is_integral<InputIterator>::value>::type * = 0) : 					//? WHY ? Not in prototype
-			_alloc(alloc), _size(0), _capacity(0) {
+			  typename ft::enable_if<!ft::is_integral<InputIterator>::value>::type * = 0) : _alloc(alloc), _size(0), _capacity(0) {
 
 				_vector = NULL;
 				insert(begin(), first, last);
@@ -94,7 +93,7 @@ namespace ft {
 				 	return *this;
 				assign(x.begin(), x.end());
 				return *this;
-			 };
+			};
 
 		/* ************************************************************************** */
 		/*                                 Iterator :                                 */
@@ -132,7 +131,7 @@ namespace ft {
 					else
 						insert(end(), n - _size, 0);
 				}
-			}
+			};
 
 			size_type 				capacity() const { return _capacity; };
 
@@ -269,6 +268,7 @@ namespace ft {
 					_size++;
 				}
 			};
+
 			template <class InputIterator>
     		void					insert (iterator position, InputIterator first, InputIterator last, 
 											typename ft::enable_if<!ft::is_integral<InputIterator>::value>::type * = 0) {

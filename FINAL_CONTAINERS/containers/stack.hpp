@@ -7,7 +7,6 @@
 #include <stdexcept>
 #include <cstdlib>
 #include <cstddef>
-#include <sstream>
 #include "vector.hpp"
 
 namespace ft {
@@ -42,7 +41,7 @@ namespace ft {
 				return *this;
 			};
 
-			~stack() {};
+			~stack() { };
 
 
 		/* ************************************************************************** */

@@ -1,17 +1,9 @@
-#include "../containers/vector.hpp"
+#include "../containers/set.hpp"
 #include <iostream>
 #include <iomanip>
 #include <string>
 #include <iterator>
 #include <cstddef>
-#include <vector>
-#include <map>
-#include <set>
-#include <stack>
-#include <type_traits>
-#include <vector>
-#include <map>
-#include <stack>
 #include <set>
 
 #define STD_GREEN "\033[1m\033[32m"
@@ -66,11 +58,11 @@ void	add_number(T1 &std, T2 &ft) {
 template <class T1, class T2>
 void ft_basic_vec(T1 &std, T2 &ft) {
 
-	std::vector<int>::iterator itb_std = std.begin();
-	std::vector<int>::iterator ite_std = std.end();
+	std::set<int>::iterator itb_std = std.begin();
+	std::set<int>::iterator ite_std = std.end();
 
-	ft::vector<int>::iterator itb_ft = ft.begin();
-	ft::vector<int>::iterator ite_ft = ft.end();
+	ft::set<int>::iterator itb_ft = ft.begin();
+	ft::set<int>::iterator ite_ft = ft.end();
 
 	std::cout << STD_GREEN << "----------------STD : ------------------" << std::endl;
 	std::cout <<std::endl;
@@ -100,17 +92,17 @@ void ft_basic_vec(T1 &std, T2 &ft) {
 template <class T1, class T2>
 void ft_iterator(T1 &std, T2 &ft) {
 
-	std::vector<int>::iterator itb_std = std.begin();
-	std::vector<int>::iterator ite_std = std.end();
+	std::set<int>::iterator itb_std = std.begin();
+	std::set<int>::iterator ite_std = std.end();
 	
-	std::vector<int>::reverse_iterator ritb_std = std.rbegin();
-	std::vector<int>::reverse_iterator rite_std = std.rend();
+	std::set<int>::reverse_iterator ritb_std = std.rbegin();
+	std::set<int>::reverse_iterator rite_std = std.rend();
 
-	ft::vector<int>::iterator itb_ft = ft.begin();
-	ft::vector<int>::iterator ite_ft = ft.end();
+	ft::set<int>::iterator itb_ft = ft.begin();
+	ft::set<int>::iterator ite_ft = ft.end();
 
-	ft::vector<int>::reverse_iterator ritb_ft = ft.rbegin();
-	ft::vector<int>::reverse_iterator rite_ft = ft.rend();
+	ft::set<int>::reverse_iterator ritb_ft = ft.rbegin();
+	ft::set<int>::reverse_iterator rite_ft = ft.rend();
 
 	std::cout <<  SUB_SUB_HEAD << "						      /* ---------------- */"	<< std::endl;
 	std::cout <<  SUB_SUB_HEAD << "						      /*  Reverse:        */"	<< std::endl;
@@ -204,23 +196,23 @@ void ft_iterator(T1 &std, T2 &ft) {
 template <class T1, class T2>
 void ft_const_iterator(T1 &std, T2 &ft) {
 
-	std::vector<int>::iterator itb_std = std.begin();
-	std::vector<int>::iterator ite_std = std.end();
+	std::set<int>::iterator itb_std = std.begin();
+	std::set<int>::iterator ite_std = std.end();
 
-	std::vector<int>::const_iterator c_itb_std = std.begin();
-	std::vector<int>::const_iterator c_ite_std = std.end();
+	std::set<int>::const_iterator c_itb_std = std.begin();
+	std::set<int>::const_iterator c_ite_std = std.end();
 	
-	std::vector<int>::const_reverse_iterator c_ritb_std = std.rbegin();
-	std::vector<int>::reverse_iterator c_rite_std = std.rend();
+	std::set<int>::const_reverse_iterator c_ritb_std = std.rbegin();
+	std::set<int>::reverse_iterator c_rite_std = std.rend();
 
-	ft::vector<int>::iterator itb_ft = ft.begin();
-	ft::vector<int>::iterator ite_ft = ft.end();
+	ft::set<int>::iterator itb_ft = ft.begin();
+	ft::set<int>::iterator ite_ft = ft.end();
 
-	ft::vector<int>::const_iterator c_itb_ft = ft.begin();
-	ft::vector<int>::const_iterator c_ite_ft = ft.end();
+	ft::set<int>::const_iterator c_itb_ft = ft.begin();
+	ft::set<int>::const_iterator c_ite_ft = ft.end();
 
-	ft::vector<int>::const_reverse_iterator c_ritb_ft = ft.rbegin();
-	ft::vector<int>::const_reverse_iterator c_rite_ft = ft.rend();
+	ft::set<int>::const_reverse_iterator c_ritb_ft = ft.rbegin();
+	ft::set<int>::const_reverse_iterator c_rite_ft = ft.rend();
 
 	std::cout <<  SUB_SUB_HEAD << "						      /* ---------------- */"	<< std::endl;
 	std::cout <<  SUB_SUB_HEAD << "						      /*  Reverse:        */"	<< std::endl;
@@ -300,17 +292,17 @@ void ft_const_iterator(T1 &std, T2 &ft) {
 template <class T1, class T2>
 void ft_capacity(T1 &std, T2 &ft) {
 
-	std::vector<int>::iterator itb_std = std.begin();
-	std::vector<int>::iterator ite_std = std.end();
+	std::set<int>::iterator itb_std = std.begin();
+	std::set<int>::iterator ite_std = std.end();
 	
-	std::vector<int>::reverse_iterator ritb_std = std.rbegin();
-	std::vector<int>::reverse_iterator rite_std = std.rend();
+	std::set<int>::reverse_iterator ritb_std = std.rbegin();
+	std::set<int>::reverse_iterator rite_std = std.rend();
 
-	ft::vector<int>::iterator itb_ft = ft.begin();
-	ft::vector<int>::iterator ite_ft = ft.end();
+	ft::set<int>::iterator itb_ft = ft.begin();
+	ft::set<int>::iterator ite_ft = ft.end();
 
-	ft::vector<int>::reverse_iterator ritb_ft = ft.rbegin();
-	ft::vector<int>::reverse_iterator rite_ft = ft.rend();
+	ft::set<int>::reverse_iterator ritb_ft = ft.rbegin();
+	ft::set<int>::reverse_iterator rite_ft = ft.rend();
 
 	std::cout <<  SUB_SUB_HEAD << "						      /* ---------------- */"	<< std::endl;
 	std::cout <<  SUB_SUB_HEAD << "						      /*  size:           */"	<< std::endl;
@@ -435,19 +427,19 @@ void ft_capacity(T1 &std, T2 &ft) {
 template <class T1, class T2>
 void ft_element_access(T1 &std, T2 &ft) {
 
-	std::vector<int>::iterator itb_std = std.begin();
-	std::vector<int>::iterator ite_std = std.end();
+	std::set<int>::iterator itb_std = std.begin();
+	std::set<int>::iterator ite_std = std.end();
 	
-	std::vector<int>::reverse_iterator ritb_std = std.rbegin();
-	std::vector<int>::reverse_iterator rite_std = std.rend();
+	std::set<int>::reverse_iterator ritb_std = std.rbegin();
+	std::set<int>::reverse_iterator rite_std = std.rend();
 
-	ft::vector<int>::iterator itb_ft = ft.begin();
-	ft::vector<int>::iterator ite_ft = ft.end();
+	ft::set<int>::iterator itb_ft = ft.begin();
+	ft::set<int>::iterator ite_ft = ft.end();
 
-	ft::vector<int>::reverse_iterator ritb_ft = ft.rbegin();
-	ft::vector<int>::reverse_iterator rite_ft = ft.rend();
+	ft::set<int>::reverse_iterator ritb_ft = ft.rbegin();
+	ft::set<int>::reverse_iterator rite_ft = ft.rend();
 
-	std::vector<int>::size_type size = std.size();
+	std::set<int>::size_type size = std.size();
 
 	std::cout <<  SUB_SUB_HEAD << "						      /* ---------------- */"	<< std::endl;
 	std::cout <<  SUB_SUB_HEAD << "						      /*     operator []: */"	<< std::endl;
@@ -521,20 +513,20 @@ void ft_element_acces_two(T1 &std, T2 &ft) {
 template <class T1, class T2>
 void ft_modifiers_others(T1 &std, T2 &ft) {
 
-	std::vector<int>::iterator itb_std = std.begin();
-	std::vector<int>::iterator ite_std = std.end();
+	std::set<int>::iterator itb_std = std.begin();
+	std::set<int>::iterator ite_std = std.end();
 	
-	std::vector<int>::reverse_iterator ritb_std = std.rbegin();
-	std::vector<int>::reverse_iterator rite_std = std.rend();
+	std::set<int>::reverse_iterator ritb_std = std.rbegin();
+	std::set<int>::reverse_iterator rite_std = std.rend();
 
-	ft::vector<int>::iterator itb_ft = ft.begin();
-	ft::vector<int>::iterator ite_ft = ft.end();
+	ft::set<int>::iterator itb_ft = ft.begin();
+	ft::set<int>::iterator ite_ft = ft.end();
 
-	ft::vector<int>::reverse_iterator ritb_ft = ft.rbegin();
-	ft::vector<int>::reverse_iterator rite_ft = ft.rend();
+	ft::set<int>::reverse_iterator ritb_ft = ft.rbegin();
+	ft::set<int>::reverse_iterator rite_ft = ft.rend();
 
-	std::vector<int> test;
-	ft::vector<int> test_two;
+	std::set<int> test;
+	ft::set<int> test_two;
 
 	add_number(test, test_two);
 
@@ -794,17 +786,17 @@ int main() {
 	std::cout << std::endl;
 	{
 
-		std::vector<int> one;										// Basic
-		std::vector<int> one_bis;									// Another Basic
-		std::vector<int> two (9, 90);								// with param
-		std::vector<int> three (two.begin(), two.end());			// iterator constructor
-		std::vector<int> four (three);								// copy constructor
+		std::set<int> one;										// Basic
+		std::set<int> one_bis;									// Another Basic
+		std::set<int> two (9, 90);								// with param
+		std::set<int> three (two.begin(), two.end());			// iterator constructor
+		std::set<int> four (three);								// copy constructor
 
-		ft::vector<int> five;
-		ft::vector<int> five_bis;
-		ft::vector<int> six (9, 90);
-		ft::vector<int> seven (six.begin(), six.end());
-		ft::vector<int> eight (seven);
+		ft::set<int> five;
+		ft::set<int> five_bis;
+		ft::set<int> six (9, 90);
+		ft::set<int> seven (six.begin(), six.end());
+		ft::set<int> eight (seven);
 
 		add_number(one, five);
 
